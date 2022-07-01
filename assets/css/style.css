@@ -1,0 +1,261 @@
+/* @font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+    src: url(../font/Poppins/Poppins-Black.ttf);
+}
+
+* {
+    font-family: 'Poppins';
+} */
+
+body {
+    background-image: url('../img/background.png'), linear-gradient(to right, #170C32, #2F0B72);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+.content__bg {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+.text-primary {
+    color: #FFFFFF !important;
+    font-weight: 900;
+    font-size: 3.2em;
+}
+
+.text-secondary {
+    color: #FFFFFF !important;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.primary-btn {
+    background: #F655F9;
+    padding: .4em 3em;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.primary-btn:hover {
+    background: #ce39d1;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+}
+
+.secondary-btn {
+    background: transparent;
+    padding: .4em 2em;
+    outline: none;
+    border: .15em solid #F655F9;
+    color: #F655F9;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.secondary-btn:hover {
+    border: .15em solid #ce39d1;
+    color: #ce39d1;
+}
+
+.home__bg {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.home__bg img {
+    width: 90%;
+}
+
+.ground__bg {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.ground__bg img {
+    width: 85%;
+}
+
+.prof__bg {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.img-surat {
+    width: 500px;
+    padding: 10px;
+    background: red;
+}
+
+html {
+    overflow-y: none;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.surat {
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.soal {
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.box {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+
+
+.option {
+    animation: 1s ease-out 0s 1 fadeUp;
+    animation-timing-function: cubic-bezier(0.2, 0.3, 0.25, 0.9);
+
+}
+
+
+.bg-primary {
+    background: #F655F9 !important;
+}
+
+.container-quiz1 {
+    position: relative;
+    height: 80%;
+}
+
+.soal {
+    position: absolute;
+    z-index: -1;
+    width: 30%;
+    margin: 0 0 0 10%;
+}
+
+.box {
+    position: absolute;
+    z-index: 0;
+    width: 80%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+}
+
+.option {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 2% 10% 20% 0;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.prof_animate {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+.bg {
+    background: url('../img/opening/bg.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.option_quiz {
+    gap: .5em
+}
+
+.option .option_quiz a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: left;
+    background: transparent;
+    border: .14em solid #F655F9;
+    border-radius: 4em;
+    font-size: .7em;
+}
+
+.option_quiz a:hover {
+    background: #F655F9;
+}

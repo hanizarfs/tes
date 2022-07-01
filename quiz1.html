@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homiy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main h-100">
+            <div class="container-fluid px-4 h-100">
+                <div class="row h-100 justify-content-center align-items-center text-light">
+                    <div class="col container-quiz1">
+                        <img src="assets/img/quiz/alkana/soal.svg" alt="Question" class="soal">
+                        <img src="assets/img/quiz/alkana/box.svg" alt="DialogBox" class="box">
+                    </div>
+                    <div class="option">
+                        <div class="option_quiz d-flex flex-column">
+                            <a href="true.html" id="a" class="px-4 py-1">4-metilpentana</a>
+                            <a href="false.html" class="px-4 py-1">3-metilpentana</a>
+                            <a href="false.html" class="px-4 py-1">2-metilpentana</a>
+                            <a href="false.html" class="px-4 py-1">3-metilbutana</a>
+                            <a href="false.html" class="px-4 py-1">2-metilbutana</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="demo"></div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+    <script>
+        const a = document.querySelector('#a');
+        const b = document.querySelector('#b');
+        const c = document.querySelector('#c');
+        const d = document.querySelector('#d');
+        a.addEventListener("click", () => {
+            alert('benar');
+        });
+        b.addEventListener("click", () => {
+            alert('salah');
+        });
+        c.addEventListener("click", () => {
+            alert('salah');
+        });
+        d.addEventListener("click", () => {
+            alert('salah');
+        });
+    </script>
+</body>
+
+</html>
